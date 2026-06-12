@@ -54,6 +54,7 @@
 }
 
 @media screen and (max-width: 405px) {
+  /* ==== HERO ==== */
   .hero-container {
     height: auto;
   }
