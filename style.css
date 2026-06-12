@@ -45,3 +45,15 @@ section {
   background-color: var(--primary-hover);
   cursor: pointer;
 }
+
+/* ==== IMAGES ==== */
+.images-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+}
+.images-container img {
+  width: 31rem;
+  height: 22rem;
+  object-fit: cover;
+}
