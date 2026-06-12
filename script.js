@@ -6,6 +6,7 @@ let date = new Date();
 // Display concerts
 function displayConcerts() {
   const container = document.querySelector(".concerts-container");
+  if (!container) return;
   container.innerHTML = "";
 
   concerts.forEach((concert) => {
@@ -51,6 +52,7 @@ displayConcerts();
 // Display images
 function displayImages() {
   const container = document.querySelector(".images-container");
+  if (!container) return;
   container.innerHTML = "";
 
   images.forEach((i) => {
