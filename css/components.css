@@ -5,7 +5,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3.2rem 4rem;
+  height: 10rem;
+  padding: 0 4rem;
   gap: 4rem;
 }
 /* Logo */
@@ -54,6 +55,60 @@ nav a:hover {
 .hamburger-menu {
   display: none;
   color: var(--text-color);
+}
+/* ==== HERO ==== */
+.hero-container {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../bilder/ting-paa-gang-gif.gif);
+  width: 100%;
+  height: calc(100vh - 10rem);
+  background-repeat: none;
+  background-size: cover;
+  font-family: var(--logo-font);
+  font-size: 3.2rem;
+}
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 11rem 0;
+}
+.hero-top,
+.hero-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+}
+#hero-logo {
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+#hero-description {
+  color: var(--secondary-text-color);
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+.hero-bottom a {
+  padding: 1.6rem 4rem;
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  border: 1px solid #1ed760;
+  border-radius: 0.5rem;
+  font-weight: 700;
+}
+.hero-bottom i {
+  color: #1ed760;
+}
+.next-concert p {
+  padding: 0.8rem 3.2rem;
+  font-size: 2.4rem;
+  background-color: #493b20;
+  color: var(--text-hover);
+  border-radius: 0.5rem;
+  border: 1px solid var(--text-hover);
 }
 .hidden {
   display: none;
