@@ -21,7 +21,9 @@
   <body>
     <!-- ==== HEADER ==== -->
     <header>
-      <h2 class="header-logo">BLÅTT <span class="logo-mid">&</span> RÅTT</h2>
+      <span class="header-logo"
+        >BLÅTT <span class="logo-mid">&</span> RÅTT</span
+      >
       <div class="nav-container">
         <nav id="main-navigation">
           <a href="index.html">HJEM</a>
@@ -48,6 +50,7 @@
           </h4>
           <a
             href="https://open.spotify.com/album/0oHFbbNkq24zgeW2aQJeSP?si=dQBsTE83TneZJRNpYCeGKQ"
+            aria-label="Lytt på spotify"
           >
             <i class="fa-brands fa-spotify"></i>
             <h3 id="cta-txt">LYTT PÅ SPOTIFY</h3>
@@ -57,12 +60,14 @@
 
       <!-- Concerts section -->
       <section class="concerts-section">
+        <h2 class="section-heading">Konserter</h2>
         <div class="concerts-container">
           <!-- Dynamically rendered with JS -->
         </div>
       </section>
       <!-- Images section -->
       <section class="images-section">
+        <h2 class="section-heading">Bilder</h2>
         <div class="images-container">
           <!-- Dynamically rendered with JS -->
         </div>
