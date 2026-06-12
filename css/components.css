@@ -1,0 +1,54 @@
+/* ==== HEADER ==== */
+header {
+  font-family: var(--secondary-font);
+  background-color: var(--card-bcg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.2rem 4rem;
+  gap: 4rem;
+}
+/* Logo */
+.header-logo {
+  font-family: var(--logo-font);
+  font-size: 3.2rem;
+  color: var(--text-color);
+  font-weight: 700;
+}
+.logo-mid {
+  color: var(--primary-color);
+}
+/* Navigation */
+.nav-container {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+.listen-btn {
+  font-size: 2rem;
+  background-color: var(--primary-color);
+  padding: 0.8rem 3.2rem;
+  border-radius: 0.5rem;
+}
+.listen-btn:hover {
+  background-color: var(--primary-hover);
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+nav {
+  display: flex;
+  gap: 4rem;
+  font-family: var(--secondary-font);
+  font-size: 1.6rem;
+}
+nav a {
+  border-bottom: 1px solid transparent;
+  padding: 0.8rem 0;
+}
+nav a:hover {
+  cursor: pointer;
+  color: var(--text-hover);
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--text-hover);
+  transition-duration: 0.4s;
+}
