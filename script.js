@@ -1,6 +1,6 @@
 "use strict";
-import { concerts } from "/js/concerts.js";
-import { images } from "/js/images.js";
+import { concerts } from "./js/concerts.js";
+import { images } from "./js/images.js";
 let date = new Date();
 let currentDate = date.toLocaleDateString("no-NO", {
   year: "numeric",
