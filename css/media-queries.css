@@ -6,3 +6,14 @@
     font-size: 1.6rem;
   }
 }
+
+@media screen and (max-width: 860px) {
+  /* Display nav hamburger menu */
+  .hamburger-menu {
+    display: block;
+    font-size: 2.4rem;
+  }
+  #main-navigation {
+    display: none;
+  }
+}
