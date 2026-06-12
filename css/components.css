@@ -100,6 +100,14 @@ nav a:hover {
   font-weight: 700;
   font-size: 2.4rem;
 }
+.spotify-btn:hover i {
+  display: none;
+}
+.spotify-btn:hover {
+  background-color: #1ed760;
+  color: black;
+  transition-duration: var(--transition-duration);
+}
 .hero-bottom i {
   color: #1ed760;
 }
