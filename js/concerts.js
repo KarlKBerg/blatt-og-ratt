@@ -1,6 +1,7 @@
 export let concerts = [
   {
-    date: "20. juni 2026",
+    date: "2026-06-20",
+    displayDate: "20. Juni 2026",
     name: "Lyngenfjord live",
     place: "Lyngen",
     tickets: "https://tikkio.com/events/62885-lyngenfjord-live-ivgobahta",
