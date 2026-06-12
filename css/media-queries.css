@@ -1,0 +1,8 @@
+@media screen and (max-width: 930px) {
+  .header-logo {
+    font-size: 2.4rem;
+  }
+  .listen-btn {
+    font-size: 1.6rem;
+  }
+}
