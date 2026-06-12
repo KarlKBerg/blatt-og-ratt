@@ -2,11 +2,6 @@
 import { concerts } from "./js/concerts.js";
 import { images } from "./js/images.js";
 let date = new Date();
-let currentDate = date.toLocaleDateString("no-NO", {
-  year: "numeric",
-  month: "long",
-  day: "numeric",
-});
 
 // Display concerts
 function displayConcerts() {
@@ -26,9 +21,9 @@ function displayConcerts() {
     const leftInfo = document.createElement("div");
     leftInfo.classList.add("left-info");
 
-    const date = document.createElement("span");
-    date.classList.add("date");
-    date.textContent = concert.date;
+    const dateSpan = document.createElement("span");
+    dateSpan.classList.add("date");
+    dateSpan.textContent = concert.displayDate;
 
     const name = document.createElement("span");
     name.classList.add("name");
@@ -47,7 +42,7 @@ function displayConcerts() {
       div.appendChild(leftInfo);
       div.appendChild(place);
       div.appendChild(tickets);
-      leftInfo.appendChild(date);
+      leftInfo.appendChild(dateSpan);
       leftInfo.appendChild(name);
     }
   });
