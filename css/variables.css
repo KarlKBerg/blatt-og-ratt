@@ -14,4 +14,7 @@
 
   --primary-hover: #21398e;
   --text-hover: #c8a96e;
+
+  /* Animations */
+  --transition-duration: 0.4s;
 }
