@@ -38,14 +38,13 @@ function displayConcerts() {
     tickets.classList.add("tickets");
     tickets.textContent = "BILETTER";
     tickets.href = concert.tickets;
-    if (parsedStringDate >= date) {
-      container.appendChild(div);
+    
+    container.appendChild(div);
       div.appendChild(leftInfo);
       div.appendChild(place);
       div.appendChild(tickets);
       leftInfo.appendChild(dateSpan);
       leftInfo.appendChild(name);
-    }
   });
 }
 displayConcerts();
