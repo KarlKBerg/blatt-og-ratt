@@ -1,0 +1,14 @@
+:root {
+  /* FONTS */
+  --logo-font: "Kameron", serif;
+  --main-font: "RocknRoll One", sans-serif;
+  --secondary-font: "Gafata", sans-serif;
+
+  /* COLORS */
+  --main-bcg: #0a0a0f;
+  --card-bcg: #13131e;
+  --primary-color: #3355cc;
+  --secondary-color: #493b20;
+  --text-color: #e2e2e2;
+  --secondary-text-color: #88a;
+}
