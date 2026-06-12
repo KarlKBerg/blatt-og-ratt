@@ -52,3 +52,9 @@ nav a:hover {
   border-bottom: 1px solid var(--text-hover);
   transition-duration: 0.4s;
 }
+.hamburger-menu {
+  display: none;
+}
+.hidden {
+  display: none;
+}
