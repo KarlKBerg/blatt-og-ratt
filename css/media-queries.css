@@ -23,6 +23,7 @@
     display: none;
   }
   header {
-    padding: 2.4rem 3.2rem;
+    height: 8rem;
+    padding: 0 3.2rem;
   }
 }
