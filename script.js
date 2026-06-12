@@ -48,7 +48,6 @@ function displayConcerts() {
   });
 }
 displayConcerts();
-console.log("hello");
 // Display images
 function displayImages() {
   const container = document.querySelector(".images-container");
