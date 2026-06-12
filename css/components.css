@@ -110,6 +110,11 @@ nav a:hover {
   border-radius: 0.5rem;
   border: 1px solid var(--text-hover);
 }
+/* ==== HEADINGS ==== */
+.section-heading {
+  font-size: 3.2rem;
+  margin-bottom: 4rem;
+}
 .hidden {
   display: none;
 }
