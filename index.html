@@ -17,6 +17,8 @@
       src="https://kit.fontawesome.com/b5a5784c82.js"
       crossorigin="anonymous"
     ></script>
+    <!-- JS -->
+    <script type="module" src="script.js"></script>
   </head>
   <body>
     <!-- ==== HEADER ==== -->
@@ -55,7 +57,7 @@
     <!-- ==== MAIN ==== -->
     <main>
       <!-- Hero section -->
-      <section class="hero-section">
+      <div class="hero-section">
         <div class="hero-container">
           <div class="hero-top">
             <h1 id="hero-logo">BLÅTT <span class="logo-mid">&</span> RÅTT</h1>
@@ -69,14 +71,15 @@
               aria-label="Lytt på spotify"
             >
               <i class="fa-brands fa-spotify"></i>
-              <p id="cta-txt">LYTT PÅ SPOTIFY</p>
+              <p id="cta-txt">Lytt på Spotify</p>
             </a>
             <div class="next-concert">
               <!-- Rendered with JS -->
+              <p>Neste konsert: Lyngenfjord live 20.Juni</p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       <!-- Concerts section -->
       <section class="concerts-section">
