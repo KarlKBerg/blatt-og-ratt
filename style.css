@@ -57,3 +57,10 @@ section {
   height: 22rem;
   object-fit: cover;
 }
+/* ==== FOOTER ==== */
+footer {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  padding: 8rem;
+}
