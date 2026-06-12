@@ -17,3 +17,12 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 482px) {
+  .listen-btn {
+    display: none;
+  }
+  header {
+    padding: 2.4rem 3.2rem;
+  }
+}
