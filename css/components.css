@@ -54,6 +54,7 @@ nav a:hover {
 }
 .hamburger-menu {
   display: none;
+  color: var(--text-color);
 }
 .hidden {
   display: none;
