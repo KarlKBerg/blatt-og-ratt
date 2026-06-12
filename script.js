@@ -42,7 +42,7 @@ function displayConcerts() {
     tickets.classList.add("tickets");
     tickets.textContent = "BILETTER";
     tickets.href = concert.tickets;
-    if (concertDate >= currentDate) {
+    if (parsedStringDate >= date) {
       container.appendChild(div);
       div.appendChild(leftInfo);
       div.appendChild(place);
