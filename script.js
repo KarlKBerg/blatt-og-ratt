@@ -1,5 +1,6 @@
+"use strict";
 import { concerts } from "/js/concerts.js";
-
+import { images } from "/js/images.js";
 let date = new Date();
 let currentDate = date.toLocaleDateString("no-NO", {
   year: "numeric",
@@ -52,3 +53,18 @@ function displayConcerts() {
   });
 }
 displayConcerts();
+
+// Display images
+function displayImages() {
+  const container = document.querySelector(".images-container");
+  container.innerHTML = "";
+
+  images.forEach((i) => {
+    const image = document.createElement("img");
+    image.src = i.src;
+    image.alt = i.alt;
+
+    container.appendChild(image);
+  });
+}
+displayImages();
