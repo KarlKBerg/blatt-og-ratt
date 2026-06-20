@@ -66,4 +66,13 @@ function displayImages() {
   });
 }
 displayImages();
-// Display imaged (Images page)
+// Display images (Images page)
+
+document.querySelector(".images-container a").addEventListener("click", () => {
+  document.querySelector(".image-showcase-container").style.display = "flex";
+});
+
+document.querySelector(".close-btn").addEventListener("click", () => {
+  document.querySelector(".image-showcase-container").style.display = "none";
+});
+// Display clicked image
