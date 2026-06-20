@@ -53,7 +53,6 @@ section {
   gap: 4rem;
 }
 .images-container img {
-  width: 31rem;
   height: 22rem;
   object-fit: cover;
 }
