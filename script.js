@@ -70,7 +70,7 @@ displayImages();
 // Display images (Images page)
 
 // Display clicked image
-function displayImage(id, index) {
+function displayImage(currentImage, index) {
   const container = document.querySelector(".image-showcase-container");
   if (!container) return;
   container.innerHTML = "";
@@ -81,7 +81,7 @@ function displayImage(id, index) {
 
   const title = document.createElement("h3");
   title.classList.add("title");
-  title.textContent = id.alt;
+  title.textContent = currentImage.alt;
 
   const closeBtn = document.createElement("button");
   closeBtn.classList.add("close-btn");
@@ -95,8 +95,8 @@ function displayImage(id, index) {
   mainContainer.classList.add("main-image-container");
 
   const mainImg = document.createElement("img");
-  mainImg.src = id.src;
-  mainImg.alt = id.alt;
+  mainImg.src = currentImage.src;
+  mainImg.alt = currentImage.alt;
 
   // Next-prev buttons
   const buttonsDiv = document.createElement("div");
@@ -158,6 +158,9 @@ function displayImage(id, index) {
   images.forEach((image) => {
     const imgA = document.createElement("a");
     const img = document.createElement("img");
+    if (image.id === currentImage.id) {
+      img.classList.add("active-image");
+    }
     img.src = image.src;
     img.alt = image.alt;
     img.dataset.id = image.id;
