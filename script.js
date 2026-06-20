@@ -60,6 +60,7 @@ function displayImages() {
       const image = document.createElement("img");
       image.src = i.src;
       image.alt = i.alt;
+      image.dataset.id = i.id;
       container.appendChild(imageA);
       imageA.appendChild(image);
     }
@@ -68,11 +69,23 @@ function displayImages() {
 displayImages();
 // Display images (Images page)
 
-document.querySelector(".images-container a").addEventListener("click", () => {
-  document.querySelector(".image-showcase-container").style.display = "flex";
+// Display clicked image
+
+const imageLink = document.querySelector(".images-container a");
+const imageContainer = document.querySelector(".image-showcase-container");
+imageLink.addEventListener("click", (event) => {
+  const img = event.target.dataset.id;
+  if (!img) return;
+  imageContainer.style.display = "flex";
+  if (!imageContainer) return;
+  // Find id of image to show
+  const imageToShow = images.find((image) => image.id === img);
+  // Find image index
+  const imageIndex = images.findIndex((place) => place.id === img);
+  displayImage(imageToShow, imageIndex);
 });
 
-document.querySelector(".close-btn").addEventListener("click", () => {
-  document.querySelector(".image-showcase-container").style.display = "none";
+const closeBtn = document.querySelector(".close-btn");
+closeBtn.addEventListener("click", () => {
+  imageContainer.style.display = "none";
 });
-// Display clicked image
