@@ -38,28 +38,32 @@ function displayConcerts() {
     tickets.classList.add("tickets");
     tickets.textContent = "BILETTER";
     tickets.href = concert.tickets;
-    
+
     container.appendChild(div);
-      div.appendChild(leftInfo);
-      div.appendChild(place);
-      div.appendChild(tickets);
-      leftInfo.appendChild(dateSpan);
-      leftInfo.appendChild(name);
+    div.appendChild(leftInfo);
+    div.appendChild(place);
+    div.appendChild(tickets);
+    leftInfo.appendChild(dateSpan);
+    leftInfo.appendChild(name);
   });
 }
 displayConcerts();
-// Display images
+// Display images (Landing page)
 function displayImages() {
   const container = document.querySelector(".images-container");
   if (!container) return;
   container.innerHTML = "";
 
   images.forEach((i) => {
-    const image = document.createElement("img");
-    image.src = i.src;
-    image.alt = i.alt;
-
-    container.appendChild(image);
+    if (i.featured) {
+      const imageA = document.createElement("a");
+      const image = document.createElement("img");
+      image.src = i.src;
+      image.alt = i.alt;
+      container.appendChild(imageA);
+      imageA.appendChild(image);
+    }
   });
 }
 displayImages();
+// Display imaged (Images page)
