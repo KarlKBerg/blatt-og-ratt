@@ -2,6 +2,10 @@
 import { concerts } from "./js/concerts.js";
 import { images } from "./js/images.js";
 let date = new Date();
+let basePath = "./";
+if (window.location.pathname.includes("sider")) {
+  basePath = "../";
+}
 
 // Display concerts
 function displayConcerts() {
@@ -59,7 +63,7 @@ function displayImages() {
     if (i.featured) {
       const imageA = document.createElement("a");
       const image = document.createElement("img");
-      image.src = i.src;
+      image.src = basePath + i.src;
       image.alt = i.alt;
       image.dataset.id = i.id;
       container.appendChild(imageA);
@@ -68,6 +72,7 @@ function displayImages() {
   });
 }
 displayImages();
+
 // Display images (Gallery page)
 function displayAllImages() {
   const container = document.querySelector(".gallery-container");
@@ -75,12 +80,20 @@ function displayAllImages() {
   container.innerHTML = "";
 
   // Show first image in showcase
+  const showcase = document.querySelector(".gallery-showcase");
+  if (!showcase) return;
+  showcase.innerHTML = "";
+
+  const showcaseImage = document.createElement("img");
+  showcaseImage.src = basePath + images[0].src;
+  showcaseImage.alt = images[0].alt;
+  showcase.appendChild(showcaseImage);
 
   // Load all images in grid
   images.forEach((image) => {
     const imgContainer = document.createElement("a");
     const img = document.createElement("img");
-    img.src = image.src;
+    img.src = basePath + image.src;
     img.alt = image.alt;
     img.dataset.id = image.id;
 
@@ -88,9 +101,14 @@ function displayAllImages() {
     imgContainer.appendChild(img);
   });
   // Get ID of clicked image
+  const imgClicked = container.querySelectorAll("img");
+  imgClicked.forEach((i) => {
+    console.log(i.id);
+  });
 
   // Show clicked image in showcase
 }
+displayAllImages();
 // Display next concert
 function nextConcert() {
   const container = document.querySelector(".next-concert");
