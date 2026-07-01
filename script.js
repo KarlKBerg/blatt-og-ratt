@@ -127,3 +127,7 @@ function nextConcert() {
   container.appendChild(p);
 }
 nextConcert();
+
+document.querySelector(".hamburger-menu").addEventListener("click", () => {
+  document.querySelector(".mobile-nav-container").classList.toggle("hidden");
+});
