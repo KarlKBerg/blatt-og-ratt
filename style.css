@@ -71,3 +71,27 @@ section {
   line-height: 1.8;
   font-size: 1.4rem;
 }
+/* ==== GALLERI ==== */
+.gallery {
+  margin-top: 8rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+/* Showcase */
+.gallery-showcase img {
+  width: 100%;
+  height: auto;
+}
+/* Gallery grid */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 4rem;
+}
+.gallery-container img {
+  width: 100%;
+  height: 22rem;
+  object-fit: cover;
+}
