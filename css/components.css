@@ -56,6 +56,13 @@ nav a:hover {
   display: none;
   color: var(--text-color);
 }
+#mobile-navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  padding: 2rem 0;
+}
 /* ==== HERO ==== */
 .hero-container {
   background-image:
