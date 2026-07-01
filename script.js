@@ -75,6 +75,7 @@ displayImages();
 
 // Display images (Gallery page)
 function displayAllImages() {
+  let imgPosition = 0;
   const container = document.querySelector(".gallery-container");
   if (!container) return;
   container.innerHTML = "";
@@ -85,8 +86,8 @@ function displayAllImages() {
   showcase.innerHTML = "";
 
   const showcaseImage = document.createElement("img");
-  showcaseImage.src = basePath + images[0].src;
-  showcaseImage.alt = images[0].alt;
+  showcaseImage.src = basePath + images[imgPosition].src;
+  showcaseImage.alt = images[imgPosition].alt;
   showcase.appendChild(showcaseImage);
 
   // Load all images in grid
@@ -101,12 +102,17 @@ function displayAllImages() {
     imgContainer.appendChild(img);
   });
   // Get ID of clicked image
-  const imgClicked = container.querySelectorAll("img");
-  imgClicked.forEach((i) => {
-    console.log(i.id);
+  container.querySelectorAll("a").forEach((i) => {
+    i.addEventListener("click", (event) => {
+      let imgId = event.target.dataset.id;
+      const position = images.findIndex((imageID) => imageID.id === imgId);
+      imgPosition = position;
+      // Show clicked image in showcase
+      showcaseImage.src = basePath + images[imgPosition].src;
+      showcaseImage.alt = images[imgPosition].alt;
+      showcase.appendChild(showcaseImage);
+    });
   });
-
-  // Show clicked image in showcase
 }
 displayAllImages();
 // Display next concert
