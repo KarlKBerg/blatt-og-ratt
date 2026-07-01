@@ -32,6 +32,10 @@
     line-height: 1.6;
     font-size: 1.4rem;
   }
+  /* ==== IMAGES ==== */
+  .gallery-showcase img {
+    height: 40rem;
+  }
 }
 
 @media screen and (max-width: 660px) {
@@ -107,5 +111,9 @@
   .concert-container {
     flex-direction: column;
     gap: 1.6rem;
+  }
+  /* ==== IMAGES ==== */
+  .gallery-showcase img {
+    height: 22rem;
   }
 }
