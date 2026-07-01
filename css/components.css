@@ -90,7 +90,7 @@ nav a:hover {
   font-size: 2.4rem;
   font-weight: 500;
 }
-.hero-bottom a {
+.hero-bottom .spotify-btn {
   padding: 1.6rem 4rem;
   display: flex;
   gap: 0.8rem;
@@ -111,13 +111,17 @@ nav a:hover {
 .hero-bottom i {
   color: #1ed760;
 }
-.next-concert p {
+.next-concert a {
   padding: 0.8rem 3.2rem;
   font-size: 2.4rem;
   background-color: #493b20;
   color: var(--text-hover);
   border-radius: 0.5rem;
   border: 1px solid var(--text-hover);
+}
+.next-concert a:hover {
+  background-color: var(--text-hover);
+  color: black;
 }
 /* ==== HEADINGS ==== */
 .section-heading {
