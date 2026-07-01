@@ -148,3 +148,10 @@ nav a:hover {
 .coming-soon p {
   font-size: 3.2rem;
 }
+/* ==== FOOTER ==== */
+footer {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  padding: 8rem;
+}
