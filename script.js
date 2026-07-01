@@ -182,6 +182,18 @@ function displayImage(currentImage, index) {
   });
 }
 
+// Display next concert
+function nextConcert() {
+  const container = document.querySelector(".next-concert");
+  if (!container) return;
+  container.innerHTML = "";
+
+  const p = document.createElement("a");
+  p.textContent = `Neste konsert: ${concerts[0].name} ${concerts[0].date}`;
+  p.href = concerts[0].tickets;
+  container.appendChild(p);
+}
+nextConcert();
 const imageLink = document.querySelectorAll(".images-container a");
 const imageContainer = document.querySelector(".image-showcase-container");
 imageLink.forEach((button) => {
