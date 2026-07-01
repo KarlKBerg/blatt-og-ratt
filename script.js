@@ -68,6 +68,29 @@ function displayImages() {
   });
 }
 displayImages();
+// Display images (Gallery page)
+function displayAllImages() {
+  const container = document.querySelector(".gallery-container");
+  if (!container) return;
+  container.innerHTML = "";
+
+  // Show first image in showcase
+
+  // Load all images in grid
+  images.forEach((image) => {
+    const imgContainer = document.createElement("a");
+    const img = document.createElement("img");
+    img.src = image.src;
+    img.alt = image.alt;
+    img.dataset.id = image.id;
+
+    container.appendChild(imgContainer);
+    imgContainer.appendChild(img);
+  });
+  // Get ID of clicked image
+
+  // Show clicked image in showcase
+}
 // Display next concert
 function nextConcert() {
   const container = document.querySelector(".next-concert");
