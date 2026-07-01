@@ -99,4 +99,5 @@ section {
 .gallery-container img:hover {
   cursor: pointer;
   transform: scale(1.1);
+  transition-duration: var(--transition-duration);
 }
