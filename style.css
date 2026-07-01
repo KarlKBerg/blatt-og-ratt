@@ -55,3 +55,19 @@ section {
   height: 22rem;
   object-fit: cover;
 }
+/* ==== OM OSS ==== */
+.about-us {
+  margin-top: 8rem;
+}
+.about-us h1 {
+  text-align: center;
+}
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  max-width: 75ch;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-size: 1.4rem;
+}
