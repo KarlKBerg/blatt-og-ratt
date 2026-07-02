@@ -111,6 +111,11 @@ function displayAllImages() {
       showcaseImage.src = basePath + images[imgPosition].src;
       showcaseImage.alt = images[imgPosition].alt;
       showcase.appendChild(showcaseImage);
+      // Scroll to top
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
     });
   });
 }
