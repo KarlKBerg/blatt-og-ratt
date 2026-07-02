@@ -122,7 +122,8 @@ section {
 #musikk h1 {
   text-align: center;
 }
-.singles-container {
+.singles-container,
+.albums-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 4rem;
@@ -150,7 +151,8 @@ section {
 .single-year {
   color: var(--text-hover);
 }
-.single-showcase {
+.single-showcase,
+.album-showcase {
   padding: 2.4rem;
   background-color: var(--card-bcg);
   margin-top: 4rem;
