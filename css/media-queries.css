@@ -5,7 +5,8 @@
   .listen-btn {
     font-size: 1.4rem;
   }
-  .gallery-container {
+  .gallery-container,
+  .singles-container {
     grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -20,7 +21,8 @@
     display: none;
   }
   .images-container,
-  .gallery-container {
+  .gallery-container,
+  .singles-container {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
@@ -49,7 +51,8 @@
   }
   /* ==== IMAGES ==== */
   .images-container,
-  .gallery-container {
+  .gallery-container,
+  .singles-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -70,6 +73,10 @@
   .next-concert p {
     padding: 0.4rem 2.4rem;
     font-size: 1.6rem;
+  }
+  /* ==== MUSIKK ==== */
+  .showcase-single {
+    gap: 2rem;
   }
 }
 
@@ -97,8 +104,14 @@
   }
   /* ==== IMAGES ==== */
   .images-container,
-  .gallery-container {
+  .gallery-container,
+  .singles-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+  /* ==== MUSIKK ==== */
+  .showcase-single {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
