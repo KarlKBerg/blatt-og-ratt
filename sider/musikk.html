@@ -55,22 +55,31 @@
       </nav>
     </div>
     <!-- ==== MAIN ==== -->
-    <main class="coming-soon">
-      <h1>KOMMER SNART</h1>
-      <a href="../index.html" class="header-logo"
-        >BLÅTT <span class="logo-mid">&</span> RÅTT</a
-      >
-      <p>I mellomtiden kan du lytte til vår musikk her:</p>
-      <div class="hero-bottom">
-        <a
-          href="https://open.spotify.com/album/0oHFbbNkq24zgeW2aQJeSP?si=dQBsTE83TneZJRNpYCeGKQ"
-          aria-label="Lytt på spotify"
-          class="spotify-btn"
-        >
-          <i class="fa-brands fa-spotify"></i>
-          <p id="cta-txt">Lytt på Spotify</p>
-        </a>
-      </div>
+    <main>
+      <section id="musikk">
+        <h1 class="section-heading">Musikk</h1>
+        <div class="music-nav">
+          <button id="singles-btn" class="active">Singler</button>
+          <button id="albums-btn">Album</button>
+        </div>
+        <div class="singles">
+          <div class="singles-container">
+            <!-- Dynamically loaded with JS -->
+            <div class="single">
+              <a href="#">
+                <img src="" alt="" />
+                <div class="single-txt">
+                  <span class="single-year">2026</span>
+                  <span class="single-name">Fear of the dark</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="albums hidden">
+          <!-- Dynamically loaded with JS -->
+        </div>
+      </section>
     </main>
   </body>
 </html>
