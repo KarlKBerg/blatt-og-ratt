@@ -40,11 +40,21 @@
           <a href="sider/galleri.html">GALLERI</a>
           <a href="sider/butikk.html">BUTIKK</a>
         </nav>
-        <a
-          href="https://open.spotify.com/artist/0VtX99UxFPeVedyzQ7bNVN?si=wPkQQ7YbSe-fBIEMAyrC9g"
-          class="listen-btn"
-          >LYTT NÅ</a
-        >
+        <a href="#cart" class="cart-btn"
+          ><i class="fa-regular fa-cart-shopping"></i><span>0</span>
+        </a>
+        <div id="cart" class="hidden">
+          <div class="cart-header">
+            <h2>Your cart</h2>
+            <i class="fa-solid fa-x"></i>
+          </div>
+          <div class="cart-container">
+            <div class="empty-cart">
+              <h3>Cart empty!</h3>
+              <a href="sider/butikk.html" class="go-to-shop-btn">Go to shop</a>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <!-- Mobile navigation -->
