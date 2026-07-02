@@ -1,6 +1,7 @@
 "use strict";
 import { concerts } from "./js/concerts.js";
 import { images } from "./js/images.js";
+import { singles } from "./js/singles.js";
 let date = new Date();
 let basePath = "./";
 if (window.location.pathname.includes("sider")) {
@@ -136,3 +137,73 @@ nextConcert();
 document.querySelector(".hamburger-menu").addEventListener("click", () => {
   document.querySelector(".mobile-nav-container").classList.toggle("hidden");
 });
+
+// Display singles
+function displaySingles() {
+  const container = document.querySelector(".singles-container");
+  const showcaseContainer = document.querySelector(".single-showcase");
+  if (!container) return;
+  if (!showcaseContainer) return;
+  container.innerHTML = "";
+  showcaseContainer.innerHTML = "";
+
+  // Render all singles
+  singles.forEach((single) => {
+    const singleDiv = document.createElement("a");
+    singleDiv.href = single.url;
+    singleDiv.classList.add("single");
+
+    const img = document.createElement("img");
+    img.src = basePath + single.img;
+    img.alt = single.alt;
+
+    const txtDiv = document.createElement("div");
+    txtDiv.classList.add("single-txt");
+
+    const singleYear = document.createElement("span");
+    singleYear.classList.add("single-year");
+    singleYear.textContent = single.year;
+
+    const singleName = document.createElement("span");
+    singleName.classList.add("single-name");
+    singleName.textContent = single.name;
+
+    container.appendChild(singleDiv);
+    singleDiv.appendChild(img);
+    singleDiv.appendChild(txtDiv);
+    txtDiv.appendChild(singleYear);
+    txtDiv.appendChild(singleName);
+  });
+
+  // Render single showcase
+  const showcaseSingle = document.createElement("div");
+  showcaseSingle.classList.add("showcase-single");
+
+  const showcaseImg = document.createElement("img");
+  showcaseImg.src = basePath + singles[0].img;
+  showcaseImg.alt = singles[0].alt;
+
+  const showcaseTxt = document.createElement("div");
+  showcaseTxt.classList.add("showcase-single-txt");
+
+  const showcaseName = document.createElement("span");
+  showcaseName.classList.add("showcase-single-name");
+  showcaseName.textContent = singles[0].name;
+
+  const showcaseYear = document.createElement("span");
+  showcaseYear.classList.add("single-year");
+  showcaseYear.textContent = singles[0].year;
+
+  const listenBtn = document.createElement("a");
+  listenBtn.href = singles[0].url;
+  listenBtn.classList.add("sm-listen-btn");
+  listenBtn.textContent = "Lytt nå!";
+
+  showcaseContainer.appendChild(showcaseSingle);
+  showcaseSingle.appendChild(showcaseImg);
+  showcaseSingle.appendChild(showcaseTxt);
+  showcaseTxt.appendChild(showcaseName);
+  showcaseTxt.appendChild(showcaseYear);
+  showcaseTxt.appendChild(listenBtn);
+}
+displaySingles();
