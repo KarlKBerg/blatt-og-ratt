@@ -9,6 +9,9 @@ header {
   padding: 0 4rem;
   gap: 4rem;
 }
+button {
+  color: var(--text-color);
+}
 /* Logo */
 .header-logo {
   font-family: var(--logo-font);
