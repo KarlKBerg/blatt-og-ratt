@@ -27,22 +27,11 @@ button {
   display: flex;
   gap: 4rem;
   align-items: center;
-}
-.listen-btn {
-  font-size: 2rem;
-  background-color: var(--primary-color);
-  padding: 0.8rem 3.2rem;
-  border-radius: 0.5rem;
-  transition-duration: var(--transition-duration);
-}
-.listen-btn:hover {
-  background-color: var(--primary-hover);
-  cursor: pointer;
+  font-size: 1.6rem;
 }
 nav {
   display: flex;
   gap: 4rem;
-  font-size: 1.6rem;
 }
 nav a {
   border-bottom: 1px solid transparent;
@@ -54,6 +43,28 @@ nav a:hover {
   color: var(--text-hover);
   padding-bottom: 0.8rem;
   border-bottom: 1px solid var(--text-hover);
+}
+.cart-btn {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.cart-btn i {
+  font-size: 2.4rem;
+}
+.cart-btn span {
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.8rem;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: -15px;
+  right: -15px;
 }
 .hamburger-menu {
   display: none;
@@ -165,3 +176,4 @@ footer {
   justify-content: center;
   padding: 8rem;
 }
+/* ==== CART ==== */
