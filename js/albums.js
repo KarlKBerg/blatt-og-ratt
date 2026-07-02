@@ -1,0 +1,92 @@
+export const albums = [
+  {
+    img: "bilder/albums/full-fart-opp.jpeg",
+    year: "2026",
+    name: "Full Fart Opp",
+    url: "https://open.spotify.com/album/3pDhdoRczZJg6mp5Zqj68e?si=_oATO5J7SpKdHZcnuShFFA",
+  },
+  {
+    img: "bilder/albums/live-stopp-pressen.jpeg",
+    year: "2025",
+    name: "Live @ Stopp Pressen 2011",
+    url: "https://open.spotify.com/album/1YJNtYbSwd34nW7HfLkAKv?si=qcNY9dFIQvy0kLKQmyVXVA",
+  },
+  {
+    img: "bilder/albums/peace-love-og-kråkegull.jpeg",
+    year: "2020",
+    name: "Peace, Love og Kråkegull",
+    url: "https://open.spotify.com/album/0OQ8s3Cb8hDgKjRgz77rZU?si=pjSUVpLkT5qO5wSeXLcY9g",
+  },
+  {
+    img: "bilder/albums/oppned.jpeg",
+    year: "2019",
+    name: "Oppned (20 Years Anniversary)",
+    url: "https://open.spotify.com/album/1ws1SXGHTBnGwG3MCEObK6?si=55j9tpqOQO-8QXFhCPnk3g",
+  },
+  {
+    img: "bilder/albums/stifinner.jpeg",
+    year: "2013",
+    name: "Stifinner",
+    url: "https://open.spotify.com/album/6u6PzVWnro3zdHHDC05sGo?si=P4tNIYQeSN6eRrTPajqtIg",
+  },
+  {
+    img: "bilder/albums/så-lenge-det-er-live.jpeg",
+    year: "2011",
+    name: "Så Lenge Det Er Live",
+    url: "https://open.spotify.com/album/07dQnFhtOeHpdyd7wEkzlV?si=pi2YpcO5Tn-MtbsFuOs4Ag",
+  },
+  {
+    img: "bilder/albums/kjøter.jpeg",
+    year: "2009",
+    name: "Kjøter (Remaster 2018)",
+    url: "https://open.spotify.com/album/4vFQnnqaYuKkcPvlPKoVFk?si=m_hlve2gSaSzg6BkSsE1-Q",
+  },
+  {
+    img: "bilder/albums/høyoktan.jpeg",
+    year: "2008",
+    name: "Høyoktan",
+    url: "https://open.spotify.com/album/6MsAk9ejebAshWc27yAz4Y?si=yQ9Kn8CMQ-uDZoR4pC-QWQ",
+  },
+  {
+    img: "bilder/albums/fritt-vilt.jpeg",
+    year: "2005",
+    name: "Fritt Vilt",
+    url: "https://open.spotify.com/album/0IyWYNCBQ2w9LpxktTNI0A?si=TGREiaefSJKyEGDST-uS5g",
+  },
+  {
+    img: "bilder/albums/fritt-vilt.jpeg",
+    year: "2018",
+    name: "Fritt Vilt (Remaster)",
+    url: "https://open.spotify.com/album/1GEyohyJSrvR9pjaxqukMI?si=b_g9sPXgTYeURcQu34E57w",
+  },
+  {
+    img: "bilder/albums/vanvittige-tider.jpeg",
+    year: "2002",
+    name: "Vanvittige tider",
+    url: "https://open.spotify.com/album/7JczDOlwT3sRyCgXEyAXCD?si=wiBpmaOlRwC1od1D5_fdyA",
+  },
+  {
+    img: "bilder/albums/vanvittige-tider.jpeg",
+    year: "2018",
+    name: "Vanvittige Tider (Remaster)",
+    url: "https://open.spotify.com/album/1OmPEgMnGRpGoQ06zS1aZt?si=Hlj9wQd0QMy4QqdMnODU7Q",
+  },
+  {
+    img: "bilder/albums/oppned.jpeg",
+    year: "1999",
+    name: "Oppned",
+    url: "https://open.spotify.com/album/3mL6TWJ0vLhZkaCmZxDiaO?si=QMUd_DopR4WVpUBBQOrnKA",
+  },
+  {
+    img: "bilder/albums/hvite-engel.jpeg",
+    year: "1997",
+    name: "Hvite Engel",
+    url: "https://open.spotify.com/album/1wNVCqPBAG2mBfx7dgHMoQ?si=T4v6mEuXRdmYBGX39G-MeQ",
+  },
+  {
+    img: "bilder/albums/1.jpeg",
+    year: "1996",
+    name: "Blått & Rått 1",
+    url: "https://open.spotify.com/album/5L3HN2z9uBF9K0asFpc6pg?si=bjuuYighSh-xu9Blg9254Q",
+  },
+];
