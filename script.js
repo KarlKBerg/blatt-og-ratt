@@ -285,6 +285,7 @@ function musicNav() {
   const albumPage = document.querySelector(".albums");
   const singleSelect = document.getElementById("singles-btn");
   const albumSelect = document.getElementById("albums-btn");
+  if (!singleSelect) return;
   singleSelect.addEventListener("click", () => {
     if (singleSelect.classList.contains("active")) {
       singleSelect.classList.remove("active");
@@ -298,7 +299,7 @@ function musicNav() {
       singlePage.classList.remove("hidden");
     }
   });
-
+  if (!albumSelect) return;
   albumSelect.addEventListener("click", () => {
     if (albumSelect.classList.contains("active")) {
       albumSelect.classList.remove("active");
