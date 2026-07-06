@@ -57,7 +57,3 @@ export function nextConcert() {
   p.href = concerts[0].tickets;
   container.appendChild(p);
 }
-
-document.querySelector(".hamburger-menu").addEventListener("click", () => {
-  document.querySelector(".mobile-nav-container").classList.toggle("hidden");
-});
