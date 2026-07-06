@@ -1,0 +1,130 @@
+export const images = [
+  // FEATURED
+  {
+    src: "bilder/band-cover-photo.jpg",
+    alt: "Blått og rått medlemmer ved sjøen.",
+    featured: true,
+    id: "band.cover-photo-01",
+  },
+  {
+    src: "bilder/band-cover-press.jpg",
+    alt: "Blått og rått medlemmer ved sjøen i svart og hvitt.",
+    featured: true,
+    id: "band-cover-press-02",
+  },
+  {
+    src: "bilder/band-members-s.JPG",
+    alt: "Noen av Blått og rått sine medlemmer.",
+    featured: true,
+    id: "band-members-s-03",
+  },
+  {
+    src: "bilder/band-on-big-stage.jpeg",
+    alt: "Blått og rått på stor scene.",
+    featured: true,
+    id: "band-on-big-stage-04",
+  },
+  {
+    src: "bilder/band-on-medium-stage.jpeg",
+    alt: "Blått og rått på scenen.",
+    featured: true,
+    id: "band-on-medium-stage-05",
+  },
+  {
+    src: "bilder/band-on-small-stage.jpeg",
+    alt: "Blått og rått på liten scene.",
+    featured: true,
+    id: "band-on-small-stage-06",
+  },
+  {
+    src: "bilder/bassist-ronald.jpg",
+    alt: "Blått og rått bassist Ronald Alertsen.",
+    featured: true,
+    id: "bassist-ronald-07",
+  },
+  {
+    src: "bilder/bogr-mike-farris.jpg",
+    alt: "Blått og rått medlemmer med Mike Farris.",
+    featured: true,
+    id: "bogr-mike-farris-08",
+  },
+  // NON-FEATURED
+  {
+    src: "bilder/bogr-ankomst.jpg",
+    alt: "Blått og rått ankommer Svalbard.",
+    featured: false,
+    id: "bogr-ankomst-09",
+  },
+  {
+    src: "bilder/bogr-band-bilde.jpg",
+    alt: "Blått og rått bandbilde.",
+    featured: false,
+    id: "bogr-band-bilde-10",
+  },
+  {
+    src: "bilder/bogr-kjetil-gom.jpg",
+    alt: "Blått og rått Kjetil og GOM.",
+    featured: false,
+    id: "bogr-kjetil-gom-11",
+  },
+  {
+    src: "bilder/bogr-medlemmer-mike-farris.jpg",
+    alt: "Blått og rått med Mike Farris.",
+    featured: false,
+    id: "bogr-medlemmer-mike-farris-12",
+  },
+  {
+    src: "bilder/bogr-signering-gom.jpg",
+    alt: "Blått og rått platesignering GOM.",
+    featured: false,
+    id: "bogr-signering-gom-13",
+  },
+  {
+    src: "bilder/bogr-signering-ronald.jpg",
+    alt: "Blått og rått platesignering Ronald.",
+    featured: false,
+    id: "bogr-signering-ronald-14",
+  },
+  {
+    src: "bilder/bogr-signering-svein-knut.jpg",
+    alt: "Blått og rått platesignering Svein og Knut.",
+    featured: false,
+    id: "bogr-signering-svein-knut-15",
+  },
+  {
+    src: "bilder/bogr-studio-band.jpg",
+    alt: "Blått og rått i studio.",
+    featured: false,
+    id: "bogr-studio-band-16",
+  },
+  {
+    src: "bilder/bogr-studio-gom.jpg",
+    alt: "Blått og rått i studio, GOM.",
+    featured: false,
+    id: "bogr-studio-gom-17",
+  },
+  {
+    src: "bilder/bogr-studio-kjetil.jpg",
+    alt: "Blått og rått i studio, Kjetil.",
+    featured: false,
+    id: "bogr-studio-kjetil-18",
+  },
+  {
+    src: "bilder/bogr-studio-ronald.jpg",
+    alt: "Blått og rått i studio, Ronald.",
+    featured: false,
+    id: "bogr-studio-ronald-19",
+  },
+  {
+    src: "bilder/bogr-studio-svein.jpg",
+    alt: "Blått og rått i studio, Svein.",
+    featured: false,
+    id: "bogr-studio-svein-20",
+  },
+  {
+    src: "bilder/bogr-studio.jpg",
+    alt: "Blått og rått i studio.",
+    featured: false,
+    id: "bogr-studio-21",
+  },
+];
