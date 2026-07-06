@@ -13,6 +13,7 @@ import {
   displayConcerts,
   nextConcert,
 } from "./js/functions/concert-functions.js";
+import { initNav } from "./js/functions/nav-functions.js";
 
 let date = new Date();
 let basePath = "./";
@@ -28,3 +29,4 @@ nextConcert();
 displaySingles(basePath);
 displayAlbums(basePath);
 musicNav();
+initNav();
