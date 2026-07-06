@@ -81,6 +81,10 @@
   .showcase-single {
     gap: 2rem;
   }
+  /* ==== NEXT CONCERT ==== */
+  .next-concert {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 482px) {
