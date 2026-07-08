@@ -29,16 +29,16 @@ button {
   align-items: center;
   font-size: 1.6rem;
 }
-nav {
+header nav {
   display: flex;
   gap: 4rem;
 }
-nav a {
+header nav a {
   border-bottom: 1px solid transparent;
   padding: 0.8rem 0;
   transition-duration: var(--transition-duration);
 }
-nav a:hover {
+header nav a:hover {
   cursor: pointer;
   color: var(--text-hover);
   padding-bottom: 0.8rem;
@@ -189,8 +189,55 @@ nav a:hover {
 footer {
   font-size: 1.6rem;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   padding: 8rem;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-heading {
+  font-size: 2.4rem;
+  margin-bottom: 3.2rem;
+}
+footer small {
+  text-align: center;
+  margin-top: 3.2rem;
+}
+.navigation nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.navigation nav a {
+  transition: var(--transition-duration);
+}
+.navigation nav a:hover {
+  cursor: pointer;
+  color: var(--text-hover);
+}
+.booking-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.social {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  transition: var(--transition-duration);
+}
+.social:hover {
+  cursor: pointer;
+  color: var(--text-hover);
+}
+.social i {
+  font-size: 2.4rem;
 }
 /* ==== STOP SCROLLING ==== */
 .stop-scrolling {
