@@ -43,12 +43,23 @@ export function displayProducts(path) {
   if (!container) return;
 
   const buttons = document.querySelectorAll(".cat-btn");
-
+  const pageTitle = document.querySelector(".all-products h2");
   buttons.forEach((b) => {
     b.addEventListener("click", () => {
       buttons.forEach((t) => t.classList.remove("active"));
       b.classList.add("active");
       renderProducts(path, b.dataset.cat);
+      if (b.dataset.cat === "all") {
+        pageTitle.textContent = "Alle produkter";
+      } else if (b.dataset.cat === "vinyl") {
+        pageTitle.textContent = "Vinyl-plater";
+      } else if (b.dataset.cat === "cd") {
+        pageTitle.textContent = "CD-plater";
+      } else if (b.dataset.cat === "t-shirts") {
+        pageTitle.textContent = "T-skjorter";
+      } else if (b.dataset.cat === "misc") {
+        pageTitle.textContent = "Misc produkter";
+      }
     });
   });
   renderProducts(path, "all");
