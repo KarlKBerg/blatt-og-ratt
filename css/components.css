@@ -44,28 +44,6 @@ nav a:hover {
   padding-bottom: 0.8rem;
   border-bottom: 1px solid var(--text-hover);
 }
-.cart-btn {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-}
-.cart-btn i {
-  font-size: 2.4rem;
-}
-.cart-btn span {
-  font-size: 1.8rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 2.5rem;
-  height: 2.5rem;
-  padding: 0.8rem;
-  background-color: red;
-  border-radius: 50%;
-  position: absolute;
-  top: -15px;
-  right: -15px;
-}
 .hamburger-menu {
   display: none;
   color: var(--text-color);
@@ -176,4 +154,3 @@ footer {
   justify-content: center;
   padding: 8rem;
 }
-/* ==== CART ==== */
