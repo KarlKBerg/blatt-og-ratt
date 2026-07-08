@@ -50,8 +50,10 @@ section {
   grid-template-columns: repeat(4, 1fr);
   gap: 4rem;
 }
-.images-container a:hover {
+.images-container button:hover {
   cursor: pointer;
+  transform: scale(1.1);
+  transition-duration: var(--transition-duration);
 }
 .images-container img {
   width: 100%;
