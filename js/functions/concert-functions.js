@@ -22,7 +22,7 @@ export function displayConcerts() {
 
     const dateSpan = document.createElement("span");
     dateSpan.classList.add("date");
-    dateSpan.textContent = concert.displayDate;
+    dateSpan.textContent = concertDate;
 
     const name = document.createElement("span");
     name.classList.add("name");
