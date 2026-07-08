@@ -8,6 +8,7 @@ import {
 import {
   displayImages,
   displayAllImages,
+  modalListeners,
 } from "./js/functions/image-functions.js";
 import {
   displayConcerts,
@@ -29,3 +30,4 @@ displaySingles(basePath);
 displayAlbums(basePath);
 musicNav();
 initNav();
+modalListeners();
