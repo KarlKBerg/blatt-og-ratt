@@ -15,7 +15,7 @@ import {
   nextConcert,
 } from "./js/functions/concert-functions.js";
 import { initNav } from "./js/functions/nav-functions.js";
-
+import { displayProducts } from "./js/functions/shop-functions.js";
 let basePath = "./";
 if (window.location.pathname.includes("sider")) {
   basePath = "../";
@@ -31,3 +31,4 @@ displayAlbums(basePath);
 musicNav();
 initNav();
 modalListeners();
+displayProducts(basePath);
