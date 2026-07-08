@@ -192,6 +192,7 @@ footer {
   flex-direction: column;
   padding: 8rem;
   background-color: var(--card-bcg);
+  margin-top: 8rem;
 }
 .footer-top {
   display: flex;
