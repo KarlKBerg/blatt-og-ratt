@@ -45,15 +45,3 @@ export function displayConcerts() {
     leftInfo.appendChild(name);
   });
 }
-
-// Display next concert
-export function nextConcert() {
-  const container = document.querySelector(".next-concert");
-  if (!container) return;
-  container.innerHTML = "";
-
-  const p = document.createElement("a");
-  p.textContent = `Neste konsert: ${concerts[0].name} ${concerts[0].date}`;
-  p.href = concerts[0].tickets;
-  container.appendChild(p);
-}
