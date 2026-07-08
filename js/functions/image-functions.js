@@ -77,7 +77,7 @@ const closeOverlay = document.querySelector(".overlay-header i");
 function openImageModal(i) {
   showImage.src = i.src;
   showImage.alt = i.dataset.id;
-  title.textContent = "Tittel: " + i.dataset.id;
+  title.textContent = "Tittel: " + i.alt;
   imageOverlay.style.display = "flex";
   document.body.classList.add("stop-scrolling");
 }
@@ -89,6 +89,7 @@ function closeModal() {
 // Modal event listeners
 
 export function modalListeners() {
+  if (!imagesContainer || !imageOverlay || !closeOverlay) return;
   // Open modal
   imagesContainer.querySelectorAll("img").forEach((image) => {
     image.addEventListener("click", (event) => {
