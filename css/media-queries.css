@@ -37,10 +37,6 @@
 }
 
 @media screen and (max-width: 660px) {
-  /* ==== CONCERTS ==== */
-  .concert-container {
-    font-size: 1.8rem;
-  }
   /* ==== TICKETS ==== */
   .tickets {
     padding: 0.8rem 2.4rem;
