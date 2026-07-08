@@ -66,3 +66,42 @@ export function displayAllImages(path) {
     });
   });
 }
+
+const imagesContainer = document.querySelector(".images-container");
+const imageOverlay = document.querySelector(".image-overlay");
+const showImage = document.querySelector(".overlay-box img");
+const title = document.getElementById("overlay-heading");
+const closeOverlay = document.querySelector(".overlay-header i");
+
+// Open modal function
+function openImageModal(i) {
+  showImage.src = i.src;
+  showImage.alt = i.dataset.id;
+  title.textContent = "Title: " + i.dataset.id;
+  imageOverlay.style.display = "flex";
+  document.body.classList.add("stop-scrolling");
+}
+// Close modal function
+function closeModal() {
+  imageOverlay.style.display = "none";
+  document.body.classList.remove("stop-scrolling");
+}
+// Modal event listeners
+
+export function modalListeners() {
+  // Open modal
+  imagesContainer.querySelectorAll("img").forEach((image) => {
+    image.addEventListener("click", (event) => {
+      // Open image overlay
+      openImageModal(image);
+    });
+  });
+  // Close modal
+  closeOverlay.addEventListener("click", closeModal);
+  // Close modal by clicking outside
+  imageOverlay.addEventListener("click", (event) => {
+    if (event.target === imageOverlay) {
+      closeModal();
+    }
+  });
+}
