@@ -87,7 +87,7 @@ export function displayAlbums(path) {
 
     const img = document.createElement("img");
     img.src = path + album.img;
-    img.alt = album.alt;
+    img.alt = album.name + " cover";
 
     const txtDiv = document.createElement("div");
     txtDiv.classList.add("single-txt");
@@ -113,7 +113,7 @@ export function displayAlbums(path) {
 
   const showcaseImg = document.createElement("img");
   showcaseImg.src = path + albums[0].img;
-  showcaseImg.alt = albums[0].alt;
+  showcaseImg.alt = albums[0].name + " cover";
 
   const showcaseTxt = document.createElement("div");
   showcaseTxt.classList.add("showcase-single-txt");
