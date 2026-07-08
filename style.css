@@ -219,6 +219,7 @@ section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 4rem;
+  margin: 0 auto;
 }
 /* Categories */
 .categories h3,
