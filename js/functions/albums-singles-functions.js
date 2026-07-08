@@ -79,7 +79,7 @@ export function displayAlbums(path) {
   container.innerHTML = "";
   showcaseContainer.innerHTML = "";
 
-  // Render all singles
+  // Render all albums
   albums.forEach((album) => {
     const singleDiv = document.createElement("a");
     singleDiv.href = album.url;
@@ -107,7 +107,7 @@ export function displayAlbums(path) {
     txtDiv.appendChild(singleName);
   });
 
-  // Render single showcase
+  // Render album showcase
   const showcaseSingle = document.createElement("div");
   showcaseSingle.classList.add("showcase-single");
 
@@ -145,32 +145,23 @@ export function musicNav() {
   const albumPage = document.querySelector(".albums");
   const singleSelect = document.getElementById("singles-btn");
   const albumSelect = document.getElementById("albums-btn");
-  if (!singleSelect) return;
-  singleSelect.addEventListener("click", () => {
-    if (singleSelect.classList.contains("active")) {
-      singleSelect.classList.remove("active");
-      singlePage.classList.add("hidden");
-      albumSelect.classList.add("active");
-      albumPage.classList.remove("hidden");
-    } else {
-      albumSelect.classList.remove("active");
-      albumPage.classList.add("hidden");
-      singleSelect.classList.add("active");
-      singlePage.classList.remove("hidden");
-    }
-  });
-  if (!albumSelect) return;
-  albumSelect.addEventListener("click", () => {
-    if (albumSelect.classList.contains("active")) {
-      albumSelect.classList.remove("active");
-      albumPage.classList.add("hidden");
-      singleSelect.classList.add("active");
-      singlePage.classList.remove("hidden");
-    } else {
-      singleSelect.classList.remove("active");
-      singlePage.classList.add("hidden");
-      albumSelect.classList.add("active");
-      albumPage.classList.remove("hidden");
-    }
+  if (!singleSelect || !albumSelect) return;
+
+  const buttonsDiv = document.querySelectorAll(".music-btn");
+
+  buttonsDiv.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      buttonsDiv.forEach((b) => {
+        b.classList.remove("active");
+        if (e.target === singleSelect) {
+          singlePage.classList.remove("hidden");
+          albumPage.classList.add("hidden");
+        } else {
+          singlePage.classList.add("hidden");
+          albumPage.classList.remove("hidden");
+        }
+      });
+      btn.classList.add("active");
+    });
   });
 }
