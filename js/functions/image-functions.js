@@ -9,7 +9,7 @@ export function displayImages(path) {
 
   images.forEach((i) => {
     if (i.featured) {
-      const imageA = document.createElement("a");
+      const imageA = document.createElement("button");
       const image = document.createElement("img");
       image.src = path + i.src;
       image.alt = i.alt;
@@ -39,7 +39,7 @@ export function displayAllImages(path) {
 
   // Load all images in grid
   images.forEach((image) => {
-    const imgContainer = document.createElement("a");
+    const imgContainer = document.createElement("button");
     const img = document.createElement("img");
     img.src = path + image.src;
     img.alt = image.alt;
