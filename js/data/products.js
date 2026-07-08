@@ -19,7 +19,7 @@ export const products = [
     img: "bilder/albums/full-fart-opp.jpeg",
     name: "T-SKJORTE",
     price: 300,
-    category: "t-skjorte",
+    category: "t-shirts",
     info: "Blått og rått t-skjorte",
   },
   {
@@ -42,7 +42,7 @@ export const products = [
     img: "bilder/albums/full-fart-opp.jpeg",
     name: "CD-BOKS",
     price: 250,
-    category: "cd-boks",
+    category: "misc",
     info: "CD boks",
   },
   {
