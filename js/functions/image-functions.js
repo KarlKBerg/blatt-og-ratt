@@ -49,7 +49,7 @@ export function displayAllImages(path) {
     imgContainer.appendChild(img);
   });
   // Get ID of clicked image
-  container.querySelectorAll("a").forEach((i) => {
+  container.querySelectorAll("button").forEach((i) => {
     i.addEventListener("click", (event) => {
       let imgId = event.target.dataset.id;
       const position = images.findIndex((imageID) => imageID.id === imgId);
@@ -76,7 +76,7 @@ const closeOverlay = document.querySelector(".overlay-header i");
 // Open modal function
 function openImageModal(i) {
   showImage.src = i.src;
-  showImage.alt = i.dataset.id;
+  showImage.alt = i.alt;
   title.textContent = "Tittel: " + i.alt;
   imageOverlay.style.display = "flex";
   document.body.classList.add("stop-scrolling");
