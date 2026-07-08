@@ -190,3 +190,72 @@ section {
   cursor: pointer;
   transition-duration: var(--transition-duration);
 }
+/* ==== BUTIKK ==== */
+.shop {
+  margin-top: 8rem;
+}
+.shop h1 {
+  text-align: center;
+}
+.search-container {
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+input {
+  background-color: var(--text-color);
+  width: 100%;
+  padding: 0.4rem 1.6rem;
+  font-size: 1.6rem;
+  border-radius: 0.8rem;
+  outline: none;
+  box-sizing: border-box;
+}
+.all-products {
+  margin-top: 4rem;
+}
+.all-products h2 {
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid var(--text-color);
+}
+.all-products-container {
+  display: flex;
+  gap: 2.4rem;
+  font-size: 1.6rem;
+}
+.products-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 4rem;
+}
+/* Categories */
+.categories h3,
+.products-container h3 {
+  border-bottom: 1px solid var(--text-color);
+  padding-bottom: 1.4rem;
+}
+.categories {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+.categories button {
+  width: 100%;
+  text-align: left;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid transparent;
+  transition-duration: var(--transition-duration);
+  font-size: 1.2rem;
+}
+.categories button:hover {
+  background-color: var(--card-bcg);
+  cursor: pointer;
+  color: var(--text-hover);
+}
