@@ -10,10 +10,7 @@ import {
   displayAllImages,
   modalListeners,
 } from "./js/functions/image-functions.js";
-import {
-  displayConcerts,
-  nextConcert,
-} from "./js/functions/concert-functions.js";
+import { displayConcerts } from "./js/functions/concert-functions.js";
 import { initNav } from "./js/functions/nav-functions.js";
 import { displayProducts } from "./js/functions/shop-functions.js";
 let basePath = "./";
@@ -25,7 +22,6 @@ if (window.location.pathname.includes("sider")) {
 displayConcerts();
 displayImages(basePath);
 displayAllImages(basePath);
-nextConcert();
 displaySingles(basePath);
 displayAlbums(basePath);
 musicNav();
