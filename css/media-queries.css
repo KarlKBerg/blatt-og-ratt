@@ -4,6 +4,9 @@
   .albums-container {
     grid-template-columns: repeat(4, 1fr);
   }
+  .products {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media screen and (max-width: 860px) {
@@ -21,6 +24,9 @@
   .albums-container {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+  }
+  .products {
+    grid-template-columns: repeat(2, 1fr);
   }
   /* ==== ABOUT US ==== */
   .about-us {
@@ -47,6 +53,9 @@
   .singles-container,
   .albums-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .products {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -102,8 +111,16 @@
   .images-container,
   .gallery-container,
   .singles-container,
-  .albums-container {
+  .albums-container,
+  .products {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .all-products-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .products {
+    margin: 0 auto;
   }
   /* ==== MUSIKK ==== */
   .showcase-single {
@@ -121,4 +138,5 @@
   .gallery-showcase img {
     height: 22rem;
   }
+  /* ==== SHOP ==== */
 }
