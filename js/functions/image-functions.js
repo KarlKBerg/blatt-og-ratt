@@ -77,7 +77,7 @@ const closeOverlay = document.querySelector(".overlay-header i");
 function openImageModal(i) {
   showImage.src = i.src;
   showImage.alt = i.dataset.id;
-  title.textContent = "Title: " + i.dataset.id;
+  title.textContent = "Tittel: " + i.dataset.id;
   imageOverlay.style.display = "flex";
   document.body.classList.add("stop-scrolling");
 }
