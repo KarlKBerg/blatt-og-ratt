@@ -197,20 +197,6 @@ section {
 .shop h1 {
   text-align: center;
 }
-.search-container {
-  width: 100%;
-  max-width: 80rem;
-  margin: 0 auto;
-}
-input {
-  background-color: var(--text-color);
-  width: 100%;
-  padding: 0.4rem 1.6rem;
-  font-size: 1.6rem;
-  border-radius: 0.8rem;
-  outline: none;
-  box-sizing: border-box;
-}
 .all-products {
   margin-top: 4rem;
 }
