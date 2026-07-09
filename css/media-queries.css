@@ -138,6 +138,10 @@
 }
 
 @media screen and (max-width: 405px) {
+  /* ==== HEADER ==== */
+  .header-logo {
+    font-size: 2.4rem;
+  }
   /* ==== HERO ==== */
   .hero-container {
     height: auto;
@@ -146,5 +150,4 @@
   .gallery-showcase img {
     height: 22rem;
   }
-  /* ==== SHOP ==== */
 }
