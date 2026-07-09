@@ -51,9 +51,10 @@ header nav a:hover {
 #mobile-navigation {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3.2rem;
   text-align: center;
-  padding: 2rem 0;
+  padding: 3.2rem 0;
+  font-size: 1.8rem;
 }
 /* ==== HERO ==== */
 .hero-container {
