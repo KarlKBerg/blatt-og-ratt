@@ -8,12 +8,6 @@ export function displayConcerts() {
   container.innerHTML = "";
 
   concerts.forEach((concert) => {
-    const parsedStringDate = new Date(concert.date);
-    const concertDate = parsedStringDate.toLocaleDateString("no-NO", {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    });
     const div = document.createElement("div");
     div.classList.add("concert-container");
 
@@ -22,7 +16,7 @@ export function displayConcerts() {
 
     const dateSpan = document.createElement("span");
     dateSpan.classList.add("date");
-    dateSpan.textContent = concertDate;
+    dateSpan.textContent = concert.date;
 
     const name = document.createElement("span");
     name.classList.add("name");
