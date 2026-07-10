@@ -99,9 +99,10 @@ header nav a:hover {
 }
 #short-desc {
   font-size: 1.8rem;
-  width: 45ch;
+  max-width: 45ch;
   text-align: center;
   margin: 0 auto;
+  padding: 0 1.2rem;
 }
 .spotify-btn:hover i {
   display: none;
