@@ -58,13 +58,8 @@ header nav a:hover {
 }
 /* ==== HERO ==== */
 .hero-container {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../bilder/ting-paa-gang-gif.gif);
   width: 100%;
-  height: calc(100vh - 10rem);
-  background-repeat: none;
-  background-size: cover;
+
   font-family: var(--logo-font);
   font-size: 3.2rem;
 }
