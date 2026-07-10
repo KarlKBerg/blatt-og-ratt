@@ -1,5 +1,26 @@
 export const products = [
   {
+    img: "bilder/merch/bøttehatt.jpeg",
+    name: "BLÅTT OG RÅTT BØTTEHATT",
+    price: 350,
+    category: "misc",
+    info: "Blått & rått bøttehatt, onesize",
+  },
+  {
+    img: "bilder/merch/t-skjorte.jpeg",
+    name: "BLÅTT OG RÅTT T-skjorte",
+    price: 300,
+    category: "t-shirts",
+    info: "Blått & rått t-skjorte",
+  },
+  {
+    img: "bilder/merch/merch-bag.jpg",
+    name: "BLÅTT OG RÅTT MERCH BAG",
+    price: 350,
+    category: "misc",
+    info: "Blått & rått merch bag",
+  },
+  {
     img: "bilder/albums/full-fart-opp.jpeg",
     name: "FULL FART OPP VINYL",
     price: 350,
@@ -14,13 +35,6 @@ export const products = [
     category: "cd",
     info: "Full fart opp album på cd-plate",
     songs: [],
-  },
-  {
-    img: "bilder/albums/full-fart-opp.jpeg",
-    name: "T-SKJORTE",
-    price: 300,
-    category: "t-shirts",
-    info: "Blått og rått t-skjorte",
   },
   {
     img: "bilder/albums/stifinner.jpeg",
