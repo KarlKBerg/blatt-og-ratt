@@ -78,7 +78,7 @@ export const images = [
     id: "band-kronos-34",
   },
   {
-    src: "bilder/band/gom-nord",
+    src: "bilder/band/gom-nord.jpeg",
     alt: "Blått og rått nord",
     featured: false,
     id: "band-gom-nord-35",
