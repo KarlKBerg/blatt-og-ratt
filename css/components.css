@@ -58,8 +58,9 @@ header nav a:hover {
 }
 /* ==== HERO ==== */
 .hero-container {
-  width: 100%;
-
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
   font-family: var(--logo-font);
   font-size: 3.2rem;
 }
