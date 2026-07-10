@@ -4,7 +4,10 @@
 
 body {
   background-color: var(--main-bcg);
-  background-image: url("bilder/albums/full-fart-opp.jpeg");
+  background-image: url("bilder/cover-uten-tekst.jpg");
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+    url("bilder/cover-uten-tekst.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
