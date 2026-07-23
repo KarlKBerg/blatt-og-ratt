@@ -5,6 +5,7 @@ export const products = [
     price: 350,
     category: "misc",
     info: "Blått & rått bøttehatt, onesize",
+    id: "blått-og-rått-caps-fri-flyt",
   },
   {
     img: "bilder/merch/bøttehatt.jpeg",
@@ -12,6 +13,7 @@ export const products = [
     price: 350,
     category: "misc",
     info: "Blått & rått bøttehatt, onesize",
+    id: "blått-og-rått-bøttehatt-full-fart-opp",
   },
   {
     img: "bilder/merch/t-skjorte.jpeg",
@@ -19,6 +21,7 @@ export const products = [
     price: 300,
     category: "t-shirts",
     info: "Blått & rått t-skjorte full fart opp",
+    id: "blått-og-rått-t-skjorte-full-fart-opp",
   },
   {
     img: "bilder/merch/merch-bag.jpg",
@@ -26,6 +29,7 @@ export const products = [
     price: 350,
     category: "misc",
     info: "Blått & rått full fart opp merch bag",
+    id: "blått-og-rått-merch-bag-full-fart-opp",
   },
   {
     img: "bilder/merch/t-skjorte.jpeg",
@@ -33,6 +37,7 @@ export const products = [
     price: 300,
     category: "t-shirts",
     info: "Blått & rått t-skjorte fri flyt",
+    id: "blått-og-rått-t-skjorte-fri-flyt",
   },
   {
     img: "bilder/albums/full-fart-opp.jpeg",
@@ -41,6 +46,7 @@ export const products = [
     category: "vinyl",
     info: "Full fart opp album på vinyl",
     songs: [],
+    id: "blått-og-rått-vinyl-full-fart-opp",
   },
   {
     img: "bilder/albums/full-fart-opp.jpeg",
@@ -49,6 +55,7 @@ export const products = [
     category: "cd",
     info: "Full fart opp album på cd-plate",
     songs: [],
+    id: "blått-og-rått-cd-full-fart-opp",
   },
   {
     img: "bilder/albums/stifinner.jpeg",
@@ -57,6 +64,7 @@ export const products = [
     category: "vinyl",
     info: "Stifinner album på vinyl",
     songs: [],
+    id: "blått-og-rått-vinyl-stifinner",
   },
   {
     img: "bilder/albums/oppned.jpeg",
@@ -65,6 +73,7 @@ export const products = [
     category: "vinyl",
     info: "Full fart opp album på cd-plate",
     songs: [],
+    id: "blått-og-rått-vinyl-oppned",
   },
   {
     img: "bilder/albums/så-lenge-det-er-live.jpeg",
@@ -73,6 +82,7 @@ export const products = [
     category: "cd",
     info: "Full fart opp album på cd-plate",
     songs: [],
+    id: "blått-og-rått-cd-så-lenge-det-er-live",
   },
   {
     img: "bilder/albums/full-fart-opp.jpeg",
@@ -81,5 +91,6 @@ export const products = [
     category: "misc",
     info: "CD boks",
     album: ["Blått & Rått 1", "hvite engel, oppned"],
+    id: "blått-og-rått-cd-boks",
   },
 ];
