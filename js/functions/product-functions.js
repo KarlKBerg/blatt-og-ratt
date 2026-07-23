@@ -34,9 +34,10 @@ export function renderProduct(product, path) {
 
   const disclaimer = document.createElement("p");
   disclaimer.classList.add("disclaimer");
-  disclaimer.append =
-    "For øyeblikket er det bare mulig å handle fra vår butikk i vipps. Vi beklager for eventuelle ulemper dette kan medføre. Om du har spørsmål, eller ikke har mulighet til å handle via vipps, vennligst kontakt oss ved å sende mail til " +
-    email;
+  disclaimer.append(
+    "For øyeblikket er det bare mulig å handle fra vår butikk i vipps. Vi beklager for eventuelle ulemper dette kan medføre. Om du har spørsmål, eller ikke har mulighet til å handle via vipps, vennligst kontakt oss ved å sende mail til ",
+    email,
+  );
 
   container.appendChild(image);
   container.appendChild(descriptionContainer);
