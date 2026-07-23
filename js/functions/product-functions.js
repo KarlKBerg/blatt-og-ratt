@@ -48,6 +48,9 @@ export function renderProduct(product, path) {
   descriptionContainer.appendChild(title);
   descriptionContainer.appendChild(description);
   if (product.songs?.length) {
+    const heading = document.createElement("h3");
+    heading.textContent = "Sanger:";
+    descriptionContainer.appendChild(heading);
     descriptionContainer.appendChild(songList);
     product.songs.forEach((s) => {
       const song = document.createElement("li");
