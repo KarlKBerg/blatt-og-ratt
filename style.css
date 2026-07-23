@@ -319,6 +319,7 @@ section {
   gap: 3.2rem;
 }
 .product-container img {
+  max-width: 40rem;
   object-fit: contain;
 }
 .product-description-container {
