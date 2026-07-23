@@ -25,6 +25,10 @@ export function renderProduct(product, path) {
   const buyContainer = document.createElement("div");
   buyContainer.classList.add("buy-container");
 
+  const qrDescription = document.createElement("span");
+  qrDescription.classList.add("qr-desc");
+  qrDescription.textContent = "Vennligst scan qr-koden for å handle (Vipps)";
+
   const qrCode = document.createElement("img");
   qrCode.src = path + "bilder/vipps-butikk.jpg";
 
@@ -52,6 +56,9 @@ export function renderProduct(product, path) {
     });
   }
   descriptionContainer.appendChild(buyContainer);
+  buyContainer.appendChild(qrDescription);
   buyContainer.appendChild(qrCode);
   buyContainer.appendChild(disclaimer);
+  document.querySelector(".breadcrumb-active").textContent =
+    product.name.charAt(0).toUpperCase() + product.name.slice(1).toLowerCase();
 }
