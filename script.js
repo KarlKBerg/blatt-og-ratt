@@ -32,4 +32,9 @@ musicNav();
 initNav();
 modalListeners();
 displayProducts(basePath);
-if (product) renderProduct(product, basePath);
+if (product) {
+  renderProduct(product, basePath);
+} else if (document.querySelector(".product-container")) {
+  document.querySelector(".product-container").textContent =
+    "Fant ikke produktet.";
+}
