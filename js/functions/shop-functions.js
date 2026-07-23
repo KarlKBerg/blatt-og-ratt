@@ -14,6 +14,7 @@ function renderProducts(path, category) {
   filtered.forEach((product) => {
     const productDiv = document.createElement("a");
     productDiv.classList.add("product");
+    productDiv.href = `${path}sider/produkt.html?id=${product.id}`;
 
     const img = document.createElement("img");
     img.src = path + product.img;
