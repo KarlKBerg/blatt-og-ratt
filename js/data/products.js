@@ -1,10 +1,10 @@
 export const products = [
   {
-    img: "bilder/merch/bøttehatt.jpeg",
+    img: "bilder/merch/caps-fri-flyt.jpg",
     name: "BLÅTT OG RÅTT FRI FLYT CAPS",
     price: 350,
     category: "misc",
-    info: "Blått & rått bøttehatt, onesize",
+    info: "Blått & rått caps, onesize",
     id: "blått-og-rått-caps-fri-flyt",
   },
   {
@@ -32,7 +32,7 @@ export const products = [
     id: "blått-og-rått-merch-bag-full-fart-opp",
   },
   {
-    img: "bilder/merch/t-skjorte.jpeg",
+    img: "bilder/merch/t-skjorte-fri-flyt.jpg",
     name: "BLÅTT OG RÅTT FRI FLYT T-SKJORTE",
     price: 300,
     category: "t-shirts",
