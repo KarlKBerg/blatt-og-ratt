@@ -318,31 +318,29 @@ section {
   display: flex;
   gap: 3.2rem;
 }
-
 .product-container img {
   object-fit: contain;
 }
-
 .product-description-container {
   display: flex;
   flex-direction: column;
   gap: 4rem;
 }
-
 .product-description-container h2 {
   font-size: 3.2rem;
 }
-
 .product-description-container p {
   font-size: 1.8rem;
 }
-
 .product-description-container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  list-style-type: circle;
 }
-
-.product-description-container ul li {
+.product-description-container ul h3 {
+  font-size: 1.4rem;
 }
-
 .buy-container {
   display: flex;
   flex-direction: column;
