@@ -68,7 +68,7 @@ section {
   height: 22rem;
   object-fit: cover;
 }
-/* ==== OM OSS ==== */
+/* ==== ABOUT US ==== */
 .about-us {
   margin-top: 8rem;
 }
@@ -85,7 +85,7 @@ section {
   font-size: 1.6rem;
   font-family: var(--secondary-font);
 }
-/* ==== GALLERI ==== */
+/* ==== GALLERY ==== */
 .gallery {
   margin-top: 8rem;
   text-align: center;
@@ -115,7 +115,7 @@ section {
   transform: scale(1.1);
   transition-duration: var(--transition-duration);
 }
-/* ==== MUSIKK ==== */
+/* ==== MUSIC ==== */
 #musikk {
   margin-top: 8rem;
 }
@@ -200,7 +200,7 @@ section {
   cursor: pointer;
   transition-duration: var(--transition-duration);
 }
-/* ==== BUTIKK ==== */
+/* ==== SHOP ==== */
 .shop {
   margin-top: 8rem;
 }
@@ -297,3 +297,4 @@ section {
   background-color: var(--primary-hover);
   cursor: pointer;
 }
+/* ==== SINGLE PRODUCT PAGE ==== */
